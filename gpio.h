@@ -23,6 +23,7 @@
 // function prototypes
 //**************************************************************/
 void config_gpio(void);
+void config_gpio_int(void);
 
 
 #endif /* GPIO_H_ */
