@@ -29,3 +29,10 @@ void config_gpio(void)
     // set OUT register to low (TRM 12.2.2)
     P2->OUT &= ~(BIT4);
 }
+
+void config_gpio_int(void)
+{
+    P2->DIR |= BIT3;
+    P2->OUT |= BIT3;
+    P2->DS |= BIT3;
+}
